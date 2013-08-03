@@ -1,0 +1,288 @@
+
+/*@font-face {
+	font-family: Gilda;
+	src: url('../font/GildaDisplay-Regular.ttf') format('opentype');
+}*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+
+#container {
+	position: relative;
+}
+
+div, ul, li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+
+.front {
+	color: #FFF;
+	font-size: 22px;
+	line-height: 40px;
+
+}
+
+.about_box {
+	width: 500px;
+	text-align: left;
+	float: right;
+	margin-top: -125px;
+	margin-right: 20px;
+	background: rgba(0,0,0,.7);
+	padding: 30px;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+.about {
+	color: #FFF;
+	font-size: 15px;
+	line-height: 25px;
+
+}
+
+#selected {
+	color: #969798;
+}
+
+.contact_box {
+	width: 500px;
+	text-align: left;
+	float: right;
+	margin-top: -125px;
+	margin-right: 20px;
+	background: rgba(0,0,0,.7);
+	padding: 30px;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+.contact a {
+	color: #FFF;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+.contact a:hover {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.news_bg {
+	background: url("../images/news-background.jpg");
+	background-repeat: repeat;
+}
+
+.news_box {
+	width: 500px;
+	height: 100%;
+	text-align: left;
+	margin-top: -125px;
+	margin-right: 20px;
+	float:right;
+	background: rgba(0,0,0,.7);
+	padding: 30px;
+	border-radius: 5px;
+	color: #FFF;
+}
+
+.show li {
+	display: inline-block;
+}
+
+.show li img {
+	vertical-align: bottom;
+	padding-left: 210px;
+	width: 40px;
+}
+
+.show_title {
+	font-size: 9px;
+}
+
+p.show_content, .show_content img{
+	width: 450px;
+}
+
+
+nav {
+
+	height: 250px;
+	width: 100%;
+	background-image: url("../images/gradient_top.png");
+	background-repeat: repeat-x;
+	font-size: 10.5pt;
+	font-weight: bold;
+	position: relative;
+	float: left;
+}
+
+nav ul {
+	padding-top: 10px;
+    padding-left: 10px;
+	width: 800px;
+	height: 40px;
+}
+
+nav li {
+	display: inline;
+	float: left;
+}
+
+nav a {  
+    color: #fff;  
+    display: inline-block;
+    width: 110px; 
+    text-align: center;  
+    text-decoration: none;  
+    line-height: 40px; 
+} 
+
+nav a.logo, img {
+	width: 250px;
+	vertical-align: text-bottom;
+}
+
+nav a:hover, nav a:active {  
+    color: #969798;  
+} 
+
+nav a#pull, nav a.home {  
+    display: none;  
+}   
+
+/* Responsive Styles */
+
+@media screen and (max-width: 800px) {  
+    nav {  
+        border-bottom: 0;
+        background-image:none; 
+
+    }  
+
+    nav ul {  
+        display: none;  
+        height: auto;
+        background: rgba(0,0,0,.95);
+        padding-left: none;
+    }  
+
+    nav li {  
+        width: 100%; 
+        clear: left;  
+        position: relative;
+  
+    }  
+
+    nav li a.logo {
+    	display: none;
+    }
+
+    nav a {  
+        padding-left: 20px;
+        text-align: left;    
+        text-indent: 25px;
+    }
+    
+    nav a#pull { 
+        background-image: url("../images/gradient_top.png");
+        background-repeat: repeat-x;
+        height: 100px;
+    }
+
+    h1 {
+    	font-size: 25px;
+    }
+
+    h3 {
+    	font-size: 13px;
+    }
+
+    .about_box, .contact_box, .news_box{
+    	width: 350px;
+    	font-size: 12px;
+    } 
+
+    .show li img {
+	   padding-left: 170px;
+
+	}
+	
+	p.show_content, .show_content img{
+	   width: 350px;
+	}
+
+	.show_content iframe {
+		width: 350px;
+	}
+
+
+    nav a.home {
+    	display: block; 
+    }
+    nav a#pull {  
+        display: block;   
+        width: 100%;  
+        position: relative;
+        padding-top: 10px;
+		padding-left: 10px;
+    }  
+    nav a#pull:after {  
+        content:"";  
+        background: url('nav-icon.png') no-repeat;  
+        width: 30px;  
+        height: 30px;
+        display: inline-block;  
+        position: absolute;  
+        right: 15px;  
+        top: 15px;  
+    }  
+} 
+
+@media only screen and (max-width : 550px) {  
+    nav a img {  
+	    width: 200px;  
+    } 
+
+    h1 {
+    	font-size: 20px;
+    }
+    .about_box, .contact_box{
+    	width: 250px;
+    	font-size: 10px;
+    } 
+} 
+
+@media only screen and (max-width : 320px) {  
+    nav li {  
+        display: block;  
+        float: none;  
+        width: 100%;  
+    } 
+} 
