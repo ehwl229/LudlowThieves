@@ -4,7 +4,7 @@ LudlowThieves
 Author: Eric Lee, ehwl229@gmail.com
 Created: July 2013
 
-LudlowThieves - Freelance project for a up-and-coming band, The Ludlow Thieves
+LudlowThieves - Freelance project for an up-and-coming indie band, The Ludlow Thieves
 
 www.theludlowthieves.com/test (will move onto the main link once the project is complete)
 
